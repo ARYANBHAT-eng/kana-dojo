@@ -33,7 +33,7 @@ const MainMenu = () => {
   const { theme, setTheme, isGlassMode } = useThemePreferences();
 
   const characterTileClassName = clsx(
-    'inline-flex h-11 w-11 items-center justify-center rounded-xl bg-(--background-color)',
+    'inline-flex h-12 w-12 items-center justify-center rounded-xl bg-(--background-color)',
     ' text-(--secondary-color) ',
     'transition-colors',
   );
@@ -97,7 +97,7 @@ const MainMenu = () => {
     { name: 'credits', href: '/credits', icon: Sparkle },
   ];
 
-  const mobileLabelInset = 'pl-[max(40%,calc(50%-5.5rem))]';
+  const mobileLabelInset = 'pl-[max(30%,calc(50%-5.5rem))]';
 
   return (
     <div
