@@ -37,7 +37,7 @@
     "note": "Used for prohibition/failure. (Set 1)",
     "id": 4,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "dialect": "〜へん",
@@ -46,7 +46,7 @@
     "region": "Kansai",
     "note": "Example: 食べへん = 食べない。 (Set 1)",
     "id": 5,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
