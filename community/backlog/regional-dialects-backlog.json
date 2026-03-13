@@ -619,7 +619,7 @@
     "note": "Classic comedic retort (tsukkomi). (Set 4)",
     "id": 62,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "dialect": "めっちゃ",
@@ -628,7 +628,7 @@
     "region": "Kansai",
     "note": "Now used nationwide. (Set 4)",
     "id": 63,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
