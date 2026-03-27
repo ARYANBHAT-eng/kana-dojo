@@ -97,12 +97,12 @@ const MainMenu = () => {
   ];
 
   const legalLinks = [
-    { name: 'about', href: '/about', icon: CircleHelp },
     { name: 'terms', href: '/terms', icon: ScrollText },
     { name: 'privacy', href: '/privacy', icon: Cookie },
     { name: 'security', href: '/security', icon: FileLock2 },
     { name: 'patch notes', href: '/patch-notes', icon: FileDiff },
     { name: 'credits', href: '/credits', icon: Sparkle },
+    { name: 'about', href: '/about', icon: CircleHelp },
   ];
 
   const mobileLabelInset = 'pl-[max(30%,calc(50%-5.5rem))]';
