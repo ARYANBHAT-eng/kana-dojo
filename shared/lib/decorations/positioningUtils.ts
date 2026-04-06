@@ -133,22 +133,21 @@ export const generateRandomPositions = (
   const positions: Position[] = [];
   const maxAttempts = 200; // Increased for better distribution
 
-  // Since we use translate(-50%, -50%) to center the character on its position,
-  // the character extends charSize/2 in each direction from the center point.
-  // Add extra buffer (20%) to account for font rendering variations and ensure
-  // characters never get clipped at viewport edges.
-  const halfChar = charSize / 2;
-  const buffer = charSize * 0.2;
-  const padding = halfChar + buffer;
+  // Create a deadzone padding to ensure characters never extend outside viewport.
+  // Since we use translate(-50%, -50%) to center characters on their position,
+  // a character extends charSize/2 in each direction from its center point.
+  // Therefore, we need a deadzone of at least charSize/2 on each edge.
+  // We use charSize (100% of character size) for extra safety margin.
+  const deadzoneEdge = charSize;
 
   for (let i = 0; i < count; i++) {
     let placed = false;
     let attempts = 0;
 
     while (!placed && attempts < maxAttempts) {
-      // Generate random position within safe viewport bounds
-      const x = rng.real(padding, viewportWidth - padding);
-      const y = rng.real(padding, viewportHeight - padding);
+      // Generate random position within safe viewport bounds (excluding deadzone)
+      const x = rng.real(deadzoneEdge, viewportWidth - deadzoneEdge);
+      const y = rng.real(deadzoneEdge, viewportHeight - deadzoneEdge);
 
       // Check all constraints
       if (
@@ -162,10 +161,10 @@ export const generateRandomPositions = (
     }
 
     // Fallback: place with same constraints if max attempts reached
-    // Always respect viewport bounds to prevent clipping
+    // Always respect deadzone to prevent characters from extending outside viewport
     if (!placed) {
-      const x = rng.real(padding, viewportWidth - padding);
-      const y = rng.real(padding, viewportHeight - padding);
+      const x = rng.real(deadzoneEdge, viewportWidth - deadzoneEdge);
+      const y = rng.real(deadzoneEdge, viewportHeight - deadzoneEdge);
       positions.push({ x, y });
     }
   }
