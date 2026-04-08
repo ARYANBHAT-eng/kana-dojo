@@ -5,12 +5,12 @@ import { FileLock2 } from 'lucide-react';
 
 const SecurityPolicy = () => {
   return (
-    <LegalLayout>
-      <PostWrapper
-        textContent={securityPolicy}
-        icon={<FileLock2 className='size-6' />}
-        lastUpdated='April 8, 2026'
-      />
+    <LegalLayout
+      icon={<FileLock2 className='size-6' />}
+      title='Security Policy'
+      lastUpdated='April 8, 2026'
+    >
+      <PostWrapper textContent={securityPolicy} />
     </LegalLayout>
   );
 };
