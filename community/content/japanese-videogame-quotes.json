@@ -145,5 +145,33 @@
   "english": "The wind is coming!",
   "game": "The Legend of Zelda: Breath of the Wild (JP)",
   "character": "Revali"
+},
+{
+  "japanese": "まだまだだね",
+  "romaji": "Mada mada da ne",
+  "english": "You still have lots more to work on.",
+  "game": "The Prince of Tennis: Sweat & Tears 2",
+  "character": "Ryoma Echizen"
+},
+{
+  "japanese": "俺たちの物語は、ここからだ",
+  "romaji": "Oretachi no monogatari wa, koko kara da",
+  "english": "Our story starts here.",
+  "game": "Tales series",
+  "character": "Various endings"
+},
+{
+  "japanese": "それもまた一興",
+  "romaji": "Sore mo mata ikkyo",
+  "english": "That too has its charm.",
+  "game": "Onimusha series",
+  "character": "Nobunaga Oda"
+},
+{
+  "japanese": "それでも、守りたい世界があるんだ！",
+  "romaji": "Soredemo, mamoritai sekai ga arunda!",
+  "english": "Even so, there is a world I want to protect!",
+  "game": "Final Fantasy IX",
+  "character": "Garnet Til Alexandros XVII"
 }
 ]
