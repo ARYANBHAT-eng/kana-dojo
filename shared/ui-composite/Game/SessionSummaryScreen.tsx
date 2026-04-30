@@ -272,10 +272,6 @@ function GauntletSummary({
   const [previousBest, setPreviousBest] = useState<number | null>(null);
   const total = stats.correctAnswers + stats.wrongAnswers;
   const accuracy = total > 0 ? Math.round((stats.correctAnswers / total) * 100) : 0;
-      accuracy:
-        data.correct + data.wrong > 0 ? data.correct / (data.correct + data.wrong) : 0,
-    }))
-    .sort((a, b) => a.accuracy - b.accuracy);
 
   useEffect(() => {
     if (isNewBest) {
